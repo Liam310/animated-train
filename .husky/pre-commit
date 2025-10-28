@@ -1,0 +1,2 @@
+npm test
+npx jsdoc src -r -d docs

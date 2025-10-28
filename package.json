@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Testing out JSDoc business",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"testing testing testing\"",
+    "docs": "jsdoc -r .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Liam310/animated-train/issues"
   },
@@ -21,5 +23,8 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "jsdoc": "^4.0.5"
+  },
+  "dependencies": {
+    "axios": "^1.13.0"
   }
 }
