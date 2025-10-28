@@ -22,6 +22,8 @@ export const createOAuthParams = (overrides = {}) => {
  * Creates a mocked version of the `searchParams` returned by React Router's
  * useSearchParams hook. This mock implements the `.get` method on this object.
  *
+ * This docstring is longer than it used to be.
+ *
  * @param {Object} mockParams - Key/value pairs representing mocked URL params.
  *
  * @returns {Object} - The mocked `searchParams` object
