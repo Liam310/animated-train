@@ -17,4 +17,7 @@ jobs:
         run: npx jsdoc src -r -d docs
 
       - name: Commit changes
-        run: git add docs && git commit -m "this is a docs update" && git push origin main
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "docs"
+          message: "add documentation"
