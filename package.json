@@ -1,0 +1,25 @@
+{
+  "name": "animated-train",
+  "version": "1.0.0",
+  "description": "Testing out JSDoc business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liam310/animated-train.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Liam310/animated-train/issues"
+  },
+  "homepage": "https://github.com/Liam310/animated-train#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "jsdoc": "^4.0.5"
+  }
+}
