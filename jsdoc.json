@@ -1,5 +1,6 @@
 {
   "source": {
+    "include": ["src", "other"],
     "exclude": ["node_modules", "docs"]
   },
   "opts": {
