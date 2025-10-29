@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>src/file1.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -35,31 +35,38 @@
 
 <div id="main">
     
+    <h1 class="page-title">src/file1.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Define JSON
+ * @typedef {string} JSON
+ */
 
-
-    <section class="package">
-        <h3> </h3>		
+/** Filter out ads, surveys and posts
+ * @param {JSON} json - data to be filtered
+ * @returns {JSON} - JSON that is videos only
+ */
+function getOnlyVideoData(json) {
+  const newJson = json.filter(function (item) {
+    return (
+      item.titleUrl !== undefined &amp;&amp;
+      !item.titleUrl.includes("www.youtube.com/post") &amp;&amp;
+      item.details === undefined
+    );
+  });
+  return newJson;
+}
+</code></pre>
+        </article>
     </section>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
 
 
 
