@@ -40,3 +40,18 @@
 - Need to setup fairly broad permissions (or maybe fine grained tokens would be fine actually?)
 - I don't actually know how I'd do this
 - I shouldn't be spending this long on this, probably
+
+## STEPS TOWARDS VICTORY
+
+1. Try to set up docdash in this repo
+2. Move to actually run all of this in the real frontend app
+3. Think about planning planning
+
+### Planning planning?
+
+How are we going to organise work?
+
+- Sprints: 2 weeks
+  - Set a broad overarching goal for the sprint
+  - Size up tickets
+  - Pull tickets in from the backlog
