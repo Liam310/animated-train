@@ -9,6 +9,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: initial printing
+        run: echo ${{secrets.PAT_FOR_DOCS}}
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
