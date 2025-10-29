@@ -28,14 +28,13 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: "docs"
-          message: "add documentation for ${{ github.ref_name }}"
+          message: "add documentation"
 
-      - name: print some stuff
-        run: |
-          echo "Head ref: ${{ github.head_ref }}"
-          echo "Ref: ${{ github.ref }}"
-          echo "Ref name: ${{ github.ref_name }}"
-
+      # - name: print some stuff
+      #   run: |
+      #     echo "Head ref: ${{ github.head_ref }}"
+      #     echo "Ref: ${{ github.ref }}"
+      #     echo "Ref name: ${{ github.ref_name }}"
 # need to figure out how to set author correctly from github variables
 # think we can do github.actor and github.actor_id
 # ${{ github.actor }}+${{ github.actor_id }}@users.noreply.github.com
