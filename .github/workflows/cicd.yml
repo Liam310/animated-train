@@ -9,15 +9,15 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: initial printing
-        run: echo ${{secrets.PAT_FOR_DOCS}}
+      # - name: initial printing
+      #   run: echo ${{secrets.PAT_FOR_DOCS}}
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          ref: main
-          repository: Liam310/animated-train-docs
-          token: ${{ secrets.PAT_FOR_DOCS }}
-          # persist-credentials: false
+        # with:
+        #   ref: main
+        #   repository: Liam310/animated-train-docs
+        #   token: ${{ secrets.PAT_FOR_DOCS }}
+        # persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -29,16 +29,22 @@ jobs:
         run: npx jsdoc src -r -d docs
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "docs"
-          message: "add documentation"
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git add docs
+          git commit -m "[automated] update documentation"
+        # uses: EndBug/add-and-commit@v9
+        # with:
+        #   add: "docs"
+        #   message: "add documentation"
 
       # - name: print some stuff
       #   run: |
       #     echo "Head ref: ${{ github.head_ref }}"
       #     echo "Ref: ${{ github.ref }}"
       #     echo "Ref name: ${{ github.ref_name }}"
+
 # need to figure out how to set author correctly from github variables
 # think we can do github.actor and github.actor_id
 # ${{ github.actor }}+${{ github.actor_id }}@users.noreply.github.com
