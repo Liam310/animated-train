@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
-
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
+    <title>Global - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<div id="main">
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
 
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#createMockSearchParams">createMockSearchParams</a></li><li><a href="global.html#createOAuthParams">createOAuthParams</a></li><li><a href="global.html#getDonationStatus">getDonationStatus</a></li><li><a href="global.html#getDonationSummary">getDonationSummary</a></li><li><a href="global.html#getOnlyVideoData">getOnlyVideoData</a></li><li><a href="global.html#postInitiatePortability">postInitiatePortability</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
     <h1 class="page-title">Global</h1>
+    
 
     
 
@@ -28,20 +47,23 @@
 
 <header>
     
-        <h2></h2>
+        <h2>
+        
+            
+        
+        </h2>
         
     
 </header>
 
 <article>
-    <div class="container-overview">
     
+        <div class="container-overview">
         
-
-        
-
+            
 
 <dl class="details">
+    
 
     
 
@@ -77,10 +99,13 @@
 </dl>
 
 
+
+
+            
+
+            
         
-    
-    </div>
-
+        </div>
     
 
     
@@ -88,8 +113,10 @@
     
 
     
-
     
+    
+
+     
 
     
 
@@ -98,12 +125,204 @@
 
         
             
-<h4 class="name" id="getDonationStatus"><span class="type-signature">(constant) </span>getDonationStatus<span class="type-signature"></span></h4>
+<h4 class="name" id="createMockSearchParams"><span class="type-signature type-signature-constant">(constant) </span>createMockSearchParams<span class="type-signature"></span></h4>
 
 
 
 
-<div class="description">
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Creates a mocked version of the `searchParams` returned by React Router's
+useSearchParams hook. This mock implements the `.get` method on this object.
+
+This docstring is longer than it used to be.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="other_file.js.html">other/file.js</a>, <a href="other_file.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    Creates a mocked version of the `searchParams` returned by React Router's
+useSearchParams hook. This mock implements the `.get` method on this object.
+
+This docstring is longer than it used to be.
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="createOAuthParams"><span class="type-signature type-signature-constant">(constant) </span>createOAuthParams<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Creates an object of faked versions of the key/value pairs returned in URL params
+from a successful Google OAuth authentication.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="other_file.js.html">other/file.js</a>, <a href="other_file.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    Creates an object of faked versions of the key/value pairs returned in URL params
+from a successful Google OAuth authentication.
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="getDonationStatus"><span class="type-signature type-signature-constant">(constant) </span>getDonationStatus<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Makes a GET request to the SDDS API to check the status of a portability job.
+The server will expect an HttpOnly cookie to authorize this request.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_new_file2.js.html">src/new/file2.js</a>, <a href="src_new_file2.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
     Makes a GET request to the SDDS API to check the status of a portability job.
 The server will expect an HttpOnly cookie to authorize this request.
 </div>
@@ -114,37 +333,51 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
+
+        
+            
+<h4 class="name" id="getDonationSummary"><span class="type-signature type-signature-constant">(constant) </span>getDonationSummary<span class="type-signature"></span></h4>
+
+
+
+
+
 <dl class="details">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Makes a GET request to the SDDS API to check summary of a person's donated YouTube data.
+The server will expect an HttpOnly cookie to authorize this request.</li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="new_file2.js.html">new/file2.js</a>, <a href="new_file2.js.html#line31">line 31</a>
+        <a href="src_new_file2.js.html">src/new/file2.js</a>, <a href="src_new_file2.js.html#line41">line 41</a>
     </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -158,64 +391,12 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-
-        
-            
-<h4 class="name" id="getDonationSummary"><span class="type-signature">(constant) </span>getDonationSummary<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
+<div class="description usertext">
     Makes a GET request to the SDDS API to check summary of a person's donated YouTube data.
 The server will expect an HttpOnly cookie to authorize this request.
 </div>
 
 
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="new_file2.js.html">new/file2.js</a>, <a href="new_file2.js.html#line41">line 41</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
 
 
 
@@ -233,17 +414,56 @@ The server will expect an HttpOnly cookie to authorize this request.
 
     
 
-    
     <h4 class="name" id="getOnlyVideoData"><span class="type-signature"></span>getOnlyVideoData<span class="signature">(json)</span><span class="type-signature"> &rarr; {<a href="global.html#JSON">JSON</a>}</span></h4>
-    
 
     
 
 
 
-<div class="description">
-    Filter out ads, surveys and posts
-</div>
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Filter out ads, surveys and posts</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_file1.js.html">src/file1.js</a>, <a href="src_file1.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
 
@@ -253,7 +473,11 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-    <h5>Parameters:</h5>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
     
 
 <table class="params">
@@ -287,6 +511,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 <span class="param-type"><a href="global.html#JSON">JSON</a></span>
 
 
+
             
             </td>
 
@@ -306,45 +531,6 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="file1.js.html">file1.js</a>, <a href="file1.js.html#line10">line 10</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
 
 
 
@@ -355,12 +541,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-
-
-
-
-
-<h5>Returns:</h5>
+<h5 class="h5-returns">Returns:</h5>
 
         
 <div class="param-desc">
@@ -369,13 +550,14 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
     <dd>
         
 <span class="param-type"><a href="global.html#JSON">JSON</a></span>
+
 
 
     </dd>
@@ -385,24 +567,61 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-
-
         
             
 
     
 
-    
     <h4 class="name" id="postInitiatePortability"><span class="type-signature"></span>postInitiatePortability<span class="signature">(code, scopes, externalSurveyId)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-    
 
     
 
 
 
-<div class="description">
-    Makes a POST request to the SDDS API to initiate a data portability request.
-</div>
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Makes a POST request to the SDDS API to initiate a data portability request.</li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="src_new_file2.js.html">src/new/file2.js</a>, <a href="src_new_file2.js.html#line17">line 17</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
 
 
 
@@ -412,7 +631,11 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-    <h5>Parameters:</h5>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
     
 
 <table class="params">
@@ -446,6 +669,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -467,6 +691,7 @@ The server will expect an HttpOnly cookie to authorize this request.
             
                 
 <span class="param-type">string</span>
+
 
 
             
@@ -492,6 +717,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 <span class="param-type">string</span>
 
 
+
             
             </td>
 
@@ -511,45 +737,6 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="new_file2.js.html">new/file2.js</a>, <a href="new_file2.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
 
 
 
@@ -560,12 +747,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-
-
-
-
-
-<h5>Returns:</h5>
+<h5 class="h5-returns">Returns:</h5>
 
         
 <div class="param-desc">
@@ -574,7 +756,7 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-<dl>
+<dl class="param-type">
     <dt>
         Type
     </dt>
@@ -583,12 +765,11 @@ The server will expect an HttpOnly cookie to authorize this request.
 <span class="param-type">Promise</span>
 
 
+
     </dd>
 </dl>
 
     
-
-
 
 
 
@@ -605,56 +786,17 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
-<div class="description">
-    Define JSON
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">string</span>
-
-
-        </li>
-    </ul>
-
-
-
-
 
 <dl class="details">
-
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li>Define JSON</li></ul></dd>
     
 
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="file1.js.html">file1.js</a>, <a href="file1.js.html#line1">line 1</a>
+        <a href="src_file1.js.html">src/file1.js</a>, <a href="src_file1.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -663,7 +805,52 @@ The server will expect an HttpOnly cookie to authorize this request.
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 </dl>
+
+
+
+
+
+<div class="description usertext">
+    Define JSON
+</div>
+
+
+
+    <h5 class="h5-types">Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">string</span>
+
+
+
+        </li>
+    </ul>
 
 
 
@@ -681,19 +868,21 @@ The server will expect an HttpOnly cookie to authorize this request.
 
 
 
+    
+    
 </div>
-
-<nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#getDonationStatus">getDonationStatus</a></li><li><a href="global.html#getDonationSummary">getDonationSummary</a></li><li><a href="global.html#getOnlyVideoData">getOnlyVideoData</a></li><li><a href="global.html#postInitiatePortability">postInitiatePortability</a></li></ul>
-</nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Wed Oct 29 2025 11:51:43 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Wed Oct 29 2025 14:08:49 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
 </body>
 </html>
