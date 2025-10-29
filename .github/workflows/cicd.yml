@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: refs/heads/release
+          ref: main
           repository: Liam310/animated-train-docs
           token: ${{ secrets.PAT_FOR_DOCS }}
 
