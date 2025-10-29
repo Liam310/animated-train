@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/Liam310/animated-train#readme",
   "devDependencies": {
+    "clean-jsdoc-theme": "^4.3.0",
     "husky": "^9.1.7",
-    "jsdoc": "^4.0.5",
-    "tui-jsdoc-template": "^1.2.2"
+    "jsdoc": "^4.0.5"
   },
   "dependencies": {
     "axios": "^1.13.0",
