@@ -1,4 +1,7 @@
-on: push
+on:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   make-docs:
@@ -8,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
