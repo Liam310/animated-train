@@ -1,4 +1,8 @@
 /**
+ * @module gippity
+ */
+
+/**
  * Generates a random integer between two values, inclusive.
  * @param {number} min - The minimum possible value.
  * @param {number} max - The maximum possible value.
