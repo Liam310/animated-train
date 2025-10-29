@@ -17,6 +17,7 @@ jobs:
           ref: main
           repository: Liam310/animated-train-docs
           token: ${{ secrets.PAT_FOR_DOCS }}
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
