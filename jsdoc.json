@@ -6,6 +6,6 @@
   "opts": {
     "recurse": true,
     "destination": "./docs/",
-    "template": "node_modules/docdash"
+    "template": "node_modules/tui-jsdoc-template"
   }
 }
