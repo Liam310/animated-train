@@ -12,7 +12,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: main
+          repository: Liam310/animated-train-docs
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,9 +32,9 @@ jobs:
 
       - name: print some stuff
         run: |
-          echo ${{ github.head_ref }}
-          echo ${{ github.ref }}
-          echo ${{ github.ref_name }}
+          echo "Head ref: ${{ github.head_ref }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "Ref name: ${{ github.ref_name }}"
 
 # need to figure out how to set author correctly from github variables
 # think we can do github.actor and github.actor_id
